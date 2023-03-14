@@ -23,7 +23,7 @@ code {
 .home-section header img {
   width: 170px;
   height: 50px;
-  margin-top: 22.5px;
+  margin-top: 15px;
 }
 
 .home-section header button {
@@ -92,7 +92,7 @@ code {
 }
 
 .about-us {
-  height: 550px;
+  height: auto;
   background-color: black;
   color: #d93027;
 }
@@ -116,7 +116,6 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
 }
 
 .about-us .col {
@@ -357,4 +356,24 @@ code {
   .footer {
     position: relative;
   }
+}
+
+@media only screen and (max-width: 992px) {
+  .collapse {
+    background-color: rgba(217, 48, 39, 0.8);
+    margin-top: 24px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+.alice-carousel__prev-btn-item,
+.alice-carousel__next-btn-item {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+  margin: 0;
+  color: #465798;
+  font-size: 30px;
 }

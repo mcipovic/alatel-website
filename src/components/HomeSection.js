@@ -1,4 +1,6 @@
 import { Container, Col } from "react-bootstrap";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 function HomeSection() {
   const handleButtonClick = (id) => {
@@ -16,25 +18,59 @@ function HomeSection() {
     <div className="home-section">
       <header>
         <Container>
-          <Col className="text-right" md={12}>
-            <img src={require("../assets/logo.jpg")} alt="logo-img" />
-            <button onClick={() => handleButtonClick("o-nama")}>O nama</button>
-            <button onClick={() => handleButtonClick("partners")}>
-              Partneri
-            </button>
-            <button onClick={() => handleButtonClick("references")}>
-              Reference
-            </button>
-            <button onClick={() => handleButtonClick("services")}>
-              Usluge
-            </button>
-            <button onClick={() => handleButtonClick("contact")}>
-              Kontakt
-            </button>
-          </Col>
+          <Navbar sticky="top" expand="lg">
+            <Container>
+              <img
+                style={{ cursor: "pointer" }}
+                onClick={() => handleButtonClick("landing")}
+                alt="x"
+                width={200}
+                height={60}
+                src={require("../assets/logo.jpg")}
+              ></img>
+              <Navbar.Toggle
+                style={{ backgroundColor: "red" }}
+                aria-controls="basic-navbar-nav"
+              />
+              <Navbar.Collapse>
+                <Nav className="ms-auto justify-content-end">
+                  <Nav.Link
+                    style={{ color: "white", marginTop: "20px" }}
+                    onClick={() => handleButtonClick("o-nama")}
+                  >
+                    O NAMA
+                  </Nav.Link>
+                  <Nav.Link
+                    style={{ color: "white", marginTop: "20px" }}
+                    onClick={() => handleButtonClick("contact")}
+                  >
+                    KONTAKT
+                  </Nav.Link>
+                  <Nav.Link
+                    style={{ color: "white", marginTop: "20px" }}
+                    onClick={() => handleButtonClick("references")}
+                  >
+                    REFERENCE
+                  </Nav.Link>
+                  <Nav.Link
+                    style={{ color: "white", marginTop: "20px" }}
+                    onClick={() => handleButtonClick("partners")}
+                  >
+                    PARTNERI
+                  </Nav.Link>
+                  <Nav.Link
+                    style={{ color: "white", marginTop: "20px" }}
+                    onClick={() => handleButtonClick("services")}
+                  >
+                    USLUGE
+                  </Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
         </Container>
       </header>
-      <section className="landing-section">
+      <section id="landing" className="landing-section">
         <Container>
           <Col md={12} className="text-center">
             <h1>AlaTel</h1>

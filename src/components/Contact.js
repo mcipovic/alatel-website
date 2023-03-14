@@ -18,15 +18,15 @@ function Contact() {
         <Row>
           <Col md={4} data-aos="fade-right">
             <label>Mail:</label>
-            <p>example@mail.com</p>
+            <p>alatel@t-com.me</p>
           </Col>
           <Col md={4} data-aos="fade-up">
             <label>Telefon:</label>
-            <p>(123) 456-7890</p>
+            <p>+382 67 273 883</p>
           </Col>
           <Col md={4} data-aos="fade-left">
             <label>Adresa:</label>
-            <p>123 Main St, Anytown USA</p>
+            <p>19. Decembra br.5, 81000, Podgorica, Crna Gora</p>
           </Col>
         </Row>
       </Container>
