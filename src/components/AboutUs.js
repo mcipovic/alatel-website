@@ -39,7 +39,11 @@ function AboutUs() {
               inžinjera slabe struje. Posjedujemo sve potrebne licence iz
               oblasti u kojima poslujemo. Između ostalih izdvajamo:
             </p>
-            <ul style={{ textAlign: "left", fontSize: "large" }}>
+            <ul
+              data-aos="fade-up"
+              data-aos-delay="200"
+              style={{ textAlign: "left", fontSize: "large" }}
+            >
               <li>
                 Licenca za obavljanje djelatnosti izrade tehničke dokumentacije
                 i građenje objekta
@@ -59,7 +63,11 @@ function AboutUs() {
               </li>
               <li> N-Cage & DUNS</li>
             </ul>
-            <p style={{ color: "white", fontSize: "large" }}>
+            <p
+              data-aos="fade-up"
+              data-aos-delay="200"
+              style={{ color: "white", fontSize: "large" }}
+            >
               Proces našeg rada se bazira na konstantnoj komunikaciji sa
               klijentom, i u svakom projektu nalazimo rješenje koje odgovara
               zahtjevima klijenta.{" "}

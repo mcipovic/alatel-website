@@ -1,63 +1,47 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import "aos/dist/aos.css";
-import AOS from "aos";
-
-const references = [
-  {
-    name: "John Doe",
-    title: "CEO, Company X",
-    message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod justo a sem porta, a varius purus consequat. Nulla bibendum ante non sagittis dictum. Donec vel libero ac tortor posuere maximus.",
-  },
-  {
-    name: "Jane Smith",
-    title: "COO, Company Y",
-    message:
-      "Praesent sit amet bibendum libero. Nam eu leo ultrices, pretium sapien nec, convallis enim. Curabitur sit amet turpis vitae sapien scelerisque consectetur. Proin id mauris id quam tincidunt sollicitudin.",
-  },
-  {
-    name: "Bob Johnson",
-    title: "CTO, Company Z",
-    message:
-      "Suspendisse potenti. Aliquam varius eros libero, ac aliquam enim bibendum nec. Sed sodales, ipsum eu dignissim pharetra, mi eros tincidunt massa, vitae vestibulum magna enim vel nunc.",
-  },
-];
-
-const Reference = ({ name, title, message }) => {
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+import BLHarbert from "../assets/Klijenti/BLHarbert.jpg"; // import partner logos
+import CBCG from "../assets/Klijenti/CBCG.png"; // import partner logos
+import CEDIS from "../assets/Klijenti/CEDIS.jpg"; // import partner logos
+import IJZ from "../assets/Klijenti/IJZ.jpg"; // import partner logos
+import Lovcen from "../assets/Klijenti/Lovcen.png"; // import partner logos
+import MUP from "../assets/Klijenti/MUP.png"; // import partner logos
+import PETROL from "../assets/Klijenti/PETROL.png"; // import partner logos
+import PrvaBanka from "../assets/Klijenti/PrvaBanka.jpg"; // import partner logos
+import RDC from "../assets/Klijenti/RDC.jpg"; // import partner logos
+import UIKS from "../assets/Klijenti/UIKS.jpg"; // import partner logos
+function ReferencesComponent() {
   return (
-    <Col data-aos="fade-up" className="mb-4">
-      <div className="p-4 rounded text-center">
-        <p className="text-danger mb-0">{message}</p>
-        <div className="mt-4">
-          <h5 className="text-white mb-0">{name}</h5>
-          <p className="text-muted mb-0">{title}</p>
-        </div>
-      </div>
-    </Col>
-  );
-};
-
-const ReferencesComponent = () => {
-  React.useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
-
-  return (
-    <section id="references" className="py-5 references">
+    <div id="references" className="references">
       <Container>
-        <h2 className="text-white mb-5 text-center">Reference</h2>
+        <h2
+          style={{
+            textAlign: "center",
+            paddingBottom: "20px",
+            fontSize: "35px",
+          }}
+        >
+          Reference
+        </h2>
         <Row>
-          {references.map((reference, index) => (
-            <Reference key={index} {...reference} />
-          ))}
+          <AliceCarousel autoPlay autoPlayInterval={1000} infinite>
+            <img src={BLHarbert} className="sliderimg" alt="x" />
+            <img src={CBCG} className="sliderimg" alt="x" />
+            <img src={CEDIS} className="sliderimg" alt="x" />
+            <img src={IJZ} className="sliderimg" alt="x" />
+            <img src={Lovcen} className="sliderimg" alt="x" />
+            <img src={MUP} className="sliderimg" alt="x" />
+            <img src={PETROL} className="sliderimg" alt="x" />
+            <img src={PrvaBanka} className="sliderimg" alt="x" />
+            <img src={RDC} className="sliderimg" alt="x" />
+            <img src={UIKS} className="sliderimg" alt="x" />
+          </AliceCarousel>
         </Row>
       </Container>
-    </section>
+    </div>
   );
-};
-
+}
 export default ReferencesComponent;

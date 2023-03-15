@@ -42,9 +42,9 @@ function HomeSection() {
                   </Nav.Link>
                   <Nav.Link
                     style={{ color: "white", marginTop: "20px" }}
-                    onClick={() => handleButtonClick("contact")}
+                    onClick={() => handleButtonClick("services")}
                   >
-                    KONTAKT
+                    USLUGE
                   </Nav.Link>
                   <Nav.Link
                     style={{ color: "white", marginTop: "20px" }}
@@ -58,11 +58,12 @@ function HomeSection() {
                   >
                     PARTNERI
                   </Nav.Link>
+
                   <Nav.Link
                     style={{ color: "white", marginTop: "20px" }}
-                    onClick={() => handleButtonClick("services")}
+                    onClick={() => handleButtonClick("contact")}
                   >
-                    USLUGE
+                    KONTAKT
                   </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
