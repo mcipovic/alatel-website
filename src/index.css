@@ -1,9 +1,9 @@
 body {
-  margin: 0 !important;
+  margin: 0;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100%;
+  width: 100% !important;
 }
 
 code {
@@ -12,12 +12,13 @@ code {
 }
 
 .home-section header {
-  position: fixed;
+  position: fixed !important;
   top: 0;
+  left: 0;
   width: 100%;
+  z-index: 9999;
   background-color: black;
   height: 100px;
-  z-index: 1;
 }
 
 .home-section header img {
@@ -369,8 +370,8 @@ code {
   .collapse {
     background-color: rgba(217, 48, 39, 0.8);
     margin-top: 24px;
-    position: relative;
     padding-left: 10px;
+    padding-bottom: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
