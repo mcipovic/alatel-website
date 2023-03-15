@@ -106,7 +106,7 @@ const Services = () => {
                   alt="x"
                 ></img>
               </div>
-              <h3>Metal Detektor vrata/rendgen uređaji/: </h3>
+              <h3>Metal Detektor vrata/rendgen uređaji </h3>
               <p>Održavanje uređaja. Saradnja sa proizvođačem Rapiscan.</p>
             </div>
           </Col>

@@ -3,6 +3,7 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
 }
 
 code {
@@ -11,11 +12,12 @@ code {
 }
 
 .home-section header {
-  top: 0;
-  left: 0;
-  width: 100%;
   background-color: black;
   height: 100px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .home-section header img {
@@ -24,7 +26,7 @@ code {
   margin-top: 15px;
 }
 
-.home-section header button {
+.home-section button {
   float: right;
   margin-top: 35px;
   color: #d93027;
@@ -33,7 +35,7 @@ code {
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0);
   margin-left: 10px;
-  padding: 5px;
+  padding: 10px;
   border: none;
 }
 
@@ -371,6 +373,7 @@ code {
     padding-bottom: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    transition: none !important;
   }
 }
 .alice-carousel__prev-btn-item,
@@ -386,4 +389,7 @@ code {
 #services img {
   width: 250px;
   height: 150px;
+}
+.nav-link:focus {
+  outline: none;
 }

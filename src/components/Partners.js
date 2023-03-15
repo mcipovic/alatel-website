@@ -29,7 +29,7 @@ function Partners() {
       <Container>
         <h2 data-aos="fade-up">Partneri</h2>
         <Row>
-          <AliceCarousel autoPlay autoPlayInterval={1000} infinite>
+          <AliceCarousel autoPlay autoPlayInterval={1500} infinite>
             <img src={AssaAbloy} className="sliderimg" alt="x" />
             <img src={Avigilon} className="sliderimg" alt="x" />
             <img src={Geovision} className="sliderimg" alt="x" />

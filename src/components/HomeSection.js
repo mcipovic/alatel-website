@@ -33,38 +33,45 @@ function HomeSection() {
                 aria-controls="basic-navbar-nav"
               />
               <Navbar.Collapse>
-                <Nav className="ms-auto justify-content-end">
-                  <Nav.Link
+                <Nav
+                  style={
+                    {
+                      // remove the transition property
+                    }
+                  }
+                  className="ms-auto"
+                >
+                  <button
                     style={{ color: "white", marginTop: "20px" }}
                     onClick={() => handleButtonClick("o-nama")}
                   >
                     O NAMA
-                  </Nav.Link>
-                  <Nav.Link
+                  </button>
+                  <button
                     style={{ color: "white", marginTop: "20px" }}
                     onClick={() => handleButtonClick("services")}
                   >
                     USLUGE
-                  </Nav.Link>
-                  <Nav.Link
+                  </button>
+                  <button
                     style={{ color: "white", marginTop: "20px" }}
                     onClick={() => handleButtonClick("references")}
                   >
                     REFERENCE
-                  </Nav.Link>
-                  <Nav.Link
+                  </button>
+                  <button
                     style={{ color: "white", marginTop: "20px" }}
                     onClick={() => handleButtonClick("partners")}
                   >
                     PARTNERI
-                  </Nav.Link>
+                  </button>
 
-                  <Nav.Link
+                  <button
                     style={{ color: "white", marginTop: "20px" }}
                     onClick={() => handleButtonClick("contact")}
                   >
                     KONTAKT
-                  </Nav.Link>
+                  </button>
                 </Nav>
               </Navbar.Collapse>
             </Container>

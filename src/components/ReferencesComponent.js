@@ -27,7 +27,7 @@ function ReferencesComponent() {
           Reference
         </h2>
         <Row>
-          <AliceCarousel autoPlay autoPlayInterval={1000} infinite>
+          <AliceCarousel autoPlay autoPlayInterval={1500} infinite>
             <img src={BLHarbert} className="sliderimg" alt="x" />
             <img src={CBCG} className="sliderimg" alt="x" />
             <img src={CEDIS} className="sliderimg" alt="x" />
