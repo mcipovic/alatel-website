@@ -1,9 +1,9 @@
 body {
-  margin: 0;
+  margin: 0 !important;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100% !important;
+  width: 100%;
 }
 
 code {
@@ -12,12 +12,12 @@ code {
 }
 
 .home-section header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: black;
   height: 100px;
-  top: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 1 !important;
+  z-index: 1;
 }
 
 .home-section header img {
@@ -26,7 +26,7 @@ code {
   margin-top: 15px;
 }
 
-.home-section button {
+.home-section header button {
   float: right;
   margin-top: 35px;
   color: #d93027;
@@ -35,7 +35,7 @@ code {
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0);
   margin-left: 10px;
-  padding: 10px;
+  padding: 5px;
   border: none;
 }
 
@@ -369,11 +369,10 @@ code {
   .collapse {
     background-color: rgba(217, 48, 39, 0.8);
     margin-top: 24px;
-    text-align: center !important;
-    padding-bottom: 10px;
+    position: relative;
+    padding-left: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    transition: none !important;
   }
 }
 .alice-carousel__prev-btn-item,
@@ -389,7 +388,4 @@ code {
 #services img {
   width: 250px;
   height: 150px;
-}
-.nav-link:focus {
-  outline: none;
 }

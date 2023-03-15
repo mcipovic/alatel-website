@@ -18,7 +18,7 @@ function HomeSection() {
     <div className="home-section">
       <header>
         <Container>
-          <Navbar sticky="top" expand="lg">
+          <Navbar style={{ width: "100%" }} sticky="top" expand="lg">
             <Container>
               <img
                 style={{ cursor: "pointer" }}
@@ -33,45 +33,38 @@ function HomeSection() {
                 aria-controls="basic-navbar-nav"
               />
               <Navbar.Collapse>
-                <Nav
-                  style={
-                    {
-                      // remove the transition property
-                    }
-                  }
-                  className="ms-auto"
-                >
-                  <button
+                <Nav style={{}} className="ms-auto justify-content-center">
+                  <Nav.Link
                     style={{ color: "white", marginTop: "20px" }}
                     onClick={() => handleButtonClick("o-nama")}
                   >
                     O NAMA
-                  </button>
-                  <button
+                  </Nav.Link>
+                  <Nav.Link
                     style={{ color: "white", marginTop: "20px" }}
                     onClick={() => handleButtonClick("services")}
                   >
                     USLUGE
-                  </button>
-                  <button
+                  </Nav.Link>
+                  <Nav.Link
                     style={{ color: "white", marginTop: "20px" }}
                     onClick={() => handleButtonClick("references")}
                   >
                     REFERENCE
-                  </button>
-                  <button
+                  </Nav.Link>
+                  <Nav.Link
                     style={{ color: "white", marginTop: "20px" }}
                     onClick={() => handleButtonClick("partners")}
                   >
                     PARTNERI
-                  </button>
+                  </Nav.Link>
 
-                  <button
+                  <Nav.Link
                     style={{ color: "white", marginTop: "20px" }}
                     onClick={() => handleButtonClick("contact")}
                   >
                     KONTAKT
-                  </button>
+                  </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
