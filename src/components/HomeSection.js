@@ -31,36 +31,37 @@ function HomeSection() {
               <Navbar.Toggle
                 style={{ backgroundColor: "red" }}
                 aria-controls="basic-navbar-nav"
+                className="no-focus-outline"
               />
-              <Navbar.Collapse>
+              <Navbar.Collapse style={{ marginTop: "23px" }}>
                 <Nav style={{}} className="ms-auto justify-content-center">
                   <Nav.Link
-                    style={{ color: "white", marginTop: "20px" }}
+                    style={{ color: "white" }}
                     onClick={() => handleButtonClick("o-nama")}
                   >
                     O NAMA
                   </Nav.Link>
                   <Nav.Link
-                    style={{ color: "white", marginTop: "20px" }}
+                    style={{ color: "white" }}
                     onClick={() => handleButtonClick("services")}
                   >
                     USLUGE
                   </Nav.Link>
                   <Nav.Link
-                    style={{ color: "white", marginTop: "20px" }}
+                    style={{ color: "white" }}
                     onClick={() => handleButtonClick("references")}
                   >
                     REFERENCE
                   </Nav.Link>
                   <Nav.Link
-                    style={{ color: "white", marginTop: "20px" }}
+                    style={{ color: "white" }}
                     onClick={() => handleButtonClick("partners")}
                   >
                     PARTNERI
                   </Nav.Link>
 
                   <Nav.Link
-                    style={{ color: "white", marginTop: "20px" }}
+                    style={{ color: "white" }}
                     onClick={() => handleButtonClick("contact")}
                   >
                     KONTAKT

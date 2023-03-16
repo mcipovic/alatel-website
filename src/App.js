@@ -5,6 +5,7 @@ import Partners from "./components/Partners";
 import ReferencesComponent from "./components/ReferencesComponent";
 import Contact from "./components/Contact";
 import { Container } from "react-bootstrap";
+import Header from "./components/Header";
 function App() {
   return (
     <div className="App">

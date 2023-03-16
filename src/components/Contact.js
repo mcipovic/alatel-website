@@ -24,9 +24,11 @@ function Contact() {
             <label>Telefon:</label>
             <p>+382 67 273 883</p>
           </Col>
-          <Col md={4} data-aos="fade-left">
+          <Col md={4} data-aos="fade-up">
             <label>Adresa:</label>
-            <p>19. Decembra br.5, 81000, Podgorica, Crna Gora</p>
+            <p style={{ width: "100%" }}>
+              19. Decembra br.5, 81000, Podgorica, Crna Gora
+            </p>
           </Col>
         </Row>
       </Container>
