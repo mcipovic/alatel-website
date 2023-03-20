@@ -1,8 +1,10 @@
 import { Container, Col } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-
-function HomeSection() {
+import React, { useEffect, useState } from "react";
+function HomeSection({ mne, setMne, eng, setEng }) {
+  const [activeEng, setActiveEng] = useState("eng");
+  const [activeMne, setActiveMne] = useState("mne");
   const handleButtonClick = (id) => {
     const element = document.getElementById(id);
     const topOffset = 100;
@@ -14,6 +16,16 @@ function HomeSection() {
       top: offsetPosition,
     });
   };
+  useEffect(() => {
+    if (eng) {
+      setActiveEng("active-eng");
+      setActiveMne("mne");
+    } else if (mne) {
+      setActiveMne("active-mne");
+      setActiveEng("eng");
+    }
+  }, [eng, mne]);
+
   return (
     <div className="home-section">
       <header>
@@ -34,39 +46,118 @@ function HomeSection() {
                 className="no-focus-outline"
               />
               <Navbar.Collapse style={{ marginTop: "23px" }}>
-                <Nav style={{}} className="ms-auto justify-content-center">
-                  <Nav.Link
-                    style={{ color: "white" }}
-                    onClick={() => handleButtonClick("o-nama")}
-                  >
-                    O NAMA
-                  </Nav.Link>
-                  <Nav.Link
-                    style={{ color: "white" }}
-                    onClick={() => handleButtonClick("services")}
-                  >
-                    USLUGE
-                  </Nav.Link>
-                  <Nav.Link
-                    style={{ color: "white" }}
-                    onClick={() => handleButtonClick("references")}
-                  >
-                    REFERENCE
-                  </Nav.Link>
-                  <Nav.Link
-                    style={{ color: "white" }}
-                    onClick={() => handleButtonClick("partners")}
-                  >
-                    PARTNERI
-                  </Nav.Link>
+                {mne && (
+                  <Nav style={{}} className="ms-auto justify-content-center">
+                    <Nav.Link
+                      style={{ color: "white" }}
+                      onClick={() => handleButtonClick("o-nama")}
+                    >
+                      O NAMA
+                    </Nav.Link>
+                    <Nav.Link
+                      style={{ color: "white" }}
+                      onClick={() => handleButtonClick("services")}
+                    >
+                      USLUGE
+                    </Nav.Link>
+                    <Nav.Link
+                      style={{ color: "white" }}
+                      onClick={() => handleButtonClick("references")}
+                    >
+                      REFERENCE
+                    </Nav.Link>
+                    <Nav.Link
+                      style={{ color: "white" }}
+                      onClick={() => handleButtonClick("partners")}
+                    >
+                      PARTNERI
+                    </Nav.Link>
 
-                  <Nav.Link
-                    style={{ color: "white" }}
-                    onClick={() => handleButtonClick("contact")}
-                  >
-                    KONTAKT
-                  </Nav.Link>
-                </Nav>
+                    <Nav.Link
+                      style={{ color: "white" }}
+                      onClick={() => handleButtonClick("contact")}
+                    >
+                      KONTAKT
+                    </Nav.Link>
+
+                    <Nav.Link
+                      onClick={() => {
+                        setMne(true);
+                        setEng(false);
+                      }}
+                      id={activeMne}
+                      style={{ color: "#E21818" }}
+                    >
+                      MNE
+                    </Nav.Link>
+                    <Nav.Link
+                      id={activeEng}
+                      onClick={() => {
+                        setMne(false);
+                        setEng(true);
+                      }}
+                      style={{ color: "blue" }}
+                    >
+                      ENG
+                    </Nav.Link>
+                  </Nav>
+                )}
+                {eng && (
+                  <Nav style={{}} className="ms-auto justify-content-center">
+                    <Nav.Link
+                      style={{ color: "white" }}
+                      onClick={() => handleButtonClick("o-nama")}
+                    >
+                      ABOUT US
+                    </Nav.Link>
+                    <Nav.Link
+                      style={{ color: "white" }}
+                      onClick={() => handleButtonClick("services")}
+                    >
+                      SERVICES
+                    </Nav.Link>
+                    <Nav.Link
+                      style={{ color: "white" }}
+                      onClick={() => handleButtonClick("references")}
+                    >
+                      REFERENCES
+                    </Nav.Link>
+                    <Nav.Link
+                      style={{ color: "white" }}
+                      onClick={() => handleButtonClick("partners")}
+                    >
+                      PARTNERS
+                    </Nav.Link>
+
+                    <Nav.Link
+                      style={{ color: "white" }}
+                      onClick={() => handleButtonClick("contact")}
+                    >
+                      CONTACT
+                    </Nav.Link>
+
+                    <Nav.Link
+                      onClick={() => {
+                        setMne(true);
+                        setEng(false);
+                      }}
+                      id={activeMne}
+                      style={{ color: "#E21818" }}
+                    >
+                      MNE
+                    </Nav.Link>
+                    <Nav.Link
+                      id={activeEng}
+                      onClick={() => {
+                        setMne(false);
+                        setEng(true);
+                      }}
+                      style={{ color: "blue" }}
+                    >
+                      ENG
+                    </Nav.Link>
+                  </Nav>
+                )}
               </Navbar.Collapse>
             </Container>
           </Navbar>

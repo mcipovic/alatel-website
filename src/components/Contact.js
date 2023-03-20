@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-function Contact() {
+function Contact({ mne, eng }) {
   // initialize AOS library
   AOS.init({
     duration: 1000,
@@ -14,18 +14,21 @@ function Contact() {
   return (
     <section id="contact">
       <Container>
-        <h2 data-aos="fade-up">Kontakt</h2>
+        {mne && <h2 data-aos="fade-up">Kontakt</h2>}
+        {eng && <h2 data-aos="fade-up">Conatct</h2>}
         <Row>
           <Col md={4} data-aos="fade-right">
             <label>Mail:</label>
             <p>alatel@t-com.me</p>
           </Col>
           <Col md={4} data-aos="fade-up">
-            <label>Telefon:</label>
+            {mne && <label>Telefon:</label>}
+            {eng && <label>Phone:</label>}
             <p>+382 67 273 883</p>
           </Col>
           <Col md={4} data-aos="fade-up">
-            <label>Adresa:</label>
+            {mne && <label>Adresa:</label>}
+            {eng && <label>Address:</label>}
             <p style={{ width: "100%" }}>
               19. Decembra br.5, 81000, Podgorica, Crna Gora
             </p>

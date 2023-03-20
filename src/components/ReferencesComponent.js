@@ -13,19 +13,32 @@ import PETROL from "../assets/Klijenti/PETROL.png"; // import partner logos
 import PrvaBanka from "../assets/Klijenti/PrvaBanka.jpg"; // import partner logos
 import RDC from "../assets/Klijenti/RDC.jpg"; // import partner logos
 import UIKS from "../assets/Klijenti/UIKS.jpg"; // import partner logos
-function ReferencesComponent() {
+function ReferencesComponent({ mne, eng }) {
   return (
     <div id="references" className="references">
       <Container>
-        <h2
-          style={{
-            textAlign: "center",
-            paddingBottom: "20px",
-            fontSize: "35px",
-          }}
-        >
-          Reference
-        </h2>
+        {mne && (
+          <h2
+            style={{
+              textAlign: "center",
+              paddingBottom: "20px",
+              fontSize: "35px",
+            }}
+          >
+            Reference
+          </h2>
+        )}
+        {eng && (
+          <h2
+            style={{
+              textAlign: "center",
+              paddingBottom: "20px",
+              fontSize: "35px",
+            }}
+          >
+            References
+          </h2>
+        )}
         <Row>
           <AliceCarousel autoPlay autoPlayInterval={1500} infinite>
             <img src={BLHarbert} className="sliderimg" alt="x" />

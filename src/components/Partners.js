@@ -16,7 +16,7 @@ import Paradox from "../assets/Paradox.png"; // import partner logos
 import Phantom from "../assets/Phantom.png"; // import partner logos
 import Rapsican from "../assets/Rapiscan.png"; // import partner logos
 import Jantar from "../assets/Jantar.png"; // import partner logos
-function Partners() {
+function Partners({ mne, eng }) {
   // initialize AOS library
   AOS.init({
     duration: 1000,
@@ -27,7 +27,8 @@ function Partners() {
   return (
     <section id="partners">
       <Container>
-        <h2 data-aos="fade-up">Partneri</h2>
+        {mne && <h2 data-aos="fade-up">Partneri</h2>}
+        {eng && <h2 data-aos="fade-up">Partners</h2>}
         <Row>
           <AliceCarousel autoPlay autoPlayInterval={1500} infinite>
             <img src={AssaAbloy} className="sliderimg" alt="x" />
