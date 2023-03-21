@@ -87,7 +87,11 @@ function AboutUs({ mne, eng }) {
               <ul
                 data-aos="fade-up"
                 data-aos-delay="200"
-                style={{ textAlign: "left", fontSize: "large" }}
+                style={{
+                  textAlign: "left",
+                  fontSize: "large",
+                  fontWeight: "550",
+                }}
               >
                 <li>
                   Licenca za obavljanje djelatnosti izrade tehničke

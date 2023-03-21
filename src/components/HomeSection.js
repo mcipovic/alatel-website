@@ -2,6 +2,9 @@ import { Container, Col } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import React, { useEffect, useState } from "react";
+import { ReactComponent as MneIcon } from "../assets/MontenegroFlag.svg";
+import { ReactComponent as EngIcon } from "../assets/EnglishFlag.svg";
+
 function HomeSection({ mne, setMne, eng, setEng }) {
   const [activeEng, setActiveEng] = useState("eng");
   const [activeMne, setActiveMne] = useState("mne");
@@ -85,10 +88,8 @@ function HomeSection({ mne, setMne, eng, setEng }) {
                         setMne(true);
                         setEng(false);
                       }}
-                      id={activeMne}
-                      style={{ color: "#E21818" }}
                     >
-                      MNE
+                      <MneIcon id="mne-flag" />
                     </Nav.Link>
                     <Nav.Link
                       id={activeEng}
@@ -96,9 +97,8 @@ function HomeSection({ mne, setMne, eng, setEng }) {
                         setMne(false);
                         setEng(true);
                       }}
-                      style={{ color: "blue" }}
                     >
-                      ENG
+                      <EngIcon id="eng-flag" width={40} height={50} />
                     </Nav.Link>
                   </Nav>
                 )}
@@ -144,7 +144,7 @@ function HomeSection({ mne, setMne, eng, setEng }) {
                       id={activeMne}
                       style={{ color: "#E21818" }}
                     >
-                      MNE
+                      <MneIcon id="mne-flag" width={40} height={50} />
                     </Nav.Link>
                     <Nav.Link
                       id={activeEng}
@@ -154,7 +154,7 @@ function HomeSection({ mne, setMne, eng, setEng }) {
                       }}
                       style={{ color: "blue" }}
                     >
-                      ENG
+                      <EngIcon id="eng-flag" width={40} height={50} />
                     </Nav.Link>
                   </Nav>
                 )}

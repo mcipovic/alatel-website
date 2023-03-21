@@ -15,7 +15,7 @@ function Contact({ mne, eng }) {
     <section id="contact">
       <Container>
         {mne && <h2 data-aos="fade-up">Kontakt</h2>}
-        {eng && <h2 data-aos="fade-up">Conatct</h2>}
+        {eng && <h2 data-aos="fade-up">Contact</h2>}
         <Row>
           <Col md={4} data-aos="fade-right">
             <label>Mail:</label>
