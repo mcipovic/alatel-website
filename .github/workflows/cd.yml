@@ -1,0 +1,25 @@
+
+name: Node.js alatel.me CD
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy using ssh
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.PRIVATE_KEY }}
+        port: 22
+        script: |
+          cd /var/www/alatel.me
+          git pull
+          git status
+          service nginx stop
+          npm install --only=prod
+          service nginx start
