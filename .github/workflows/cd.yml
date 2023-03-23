@@ -3,7 +3,7 @@ name: Node.js alatel.me CD
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
