@@ -2,7 +2,7 @@ name: Node.js CI for alatel.me
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
