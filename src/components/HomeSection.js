@@ -167,7 +167,7 @@ function HomeSection({ mne, setMne, eng, setEng }) {
         <Container>
           <Col md={12} className="text-center">
             <h1>AlaTel</h1>
-            <p>tehcnical security solutions</p>
+            <p>technical security solutions</p>
           </Col>
         </Container>
       </section>
