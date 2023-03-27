@@ -21,7 +21,7 @@ code {
 }
 
 .home-section header img {
-  width: 170px !important;
+  width: 195px !important;
   height: 50px !important;
   margin-top: 15px !important;
 }
@@ -73,6 +73,28 @@ code {
   font-size: 4rem;
   margin-bottom: 20px;
   font-weight: bold !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .landing-section {
+    height: 600px !important;
+    width: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(201, 7, 7, 1) 5%,
+      rgba(0, 0, 0, 1) 98%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+  }
+  .home-section header img {
+    width: 180px !important;
+    height: 50px !important;
+    margin-top: 15px !important;
+  }
 }
 
 .landing-section p {

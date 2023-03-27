@@ -41,16 +41,60 @@ function ReferencesComponent({ mne, eng }) {
         )}
         <Row>
           <AliceCarousel autoPlay autoPlayInterval={1500} infinite>
-            <img src={BLHarbert} className="sliderimg" alt="x" />
-            <img src={CBCG} className="sliderimg" alt="x" />
-            <img src={CEDIS} className="sliderimg" alt="x" />
-            <img src={IJZ} className="sliderimg" alt="x" />
-            <img src={Lovcen} className="sliderimg" alt="x" />
-            <img src={MUP} className="sliderimg" alt="x" />
-            <img src={PETROL} className="sliderimg" alt="x" />
-            <img src={PrvaBanka} className="sliderimg" alt="x" />
-            <img src={RDC} className="sliderimg" alt="x" />
-            <img src={UIKS} className="sliderimg" alt="x" />
+            <a
+              href="https://www.blharbert.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <img src={BLHarbert} className="sliderimg" alt="x" />
+            </a>
+            <a href="https://cbcg.me/" target="_blank" rel="noreferrer">
+              <img src={CBCG} className="sliderimg" alt="x" />
+            </a>
+            <a href="https://cedis.me/" target="_blank" rel="noreferrer">
+              {" "}
+              <img src={CEDIS} className="sliderimg" alt="x" />
+            </a>
+            <a href="https://www.ijzcg.me/" target="_blank" rel="noreferrer">
+              {" "}
+              <img src={IJZ} className="sliderimg" alt="x" />
+            </a>
+            <a href="https://lovcen-auto.me/" target="_blank" rel="noreferrer">
+              <img src={Lovcen} className="sliderimg" alt="x" />
+            </a>
+            <a
+              href="https://www.gov.me/cyr/mup"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <img src={MUP} className="sliderimg" alt="x" />
+            </a>
+            <a href="https://www.petrol.me/" target="_blank" rel="noreferrer">
+              {" "}
+              <img src={PETROL} className="sliderimg" alt="x" />
+            </a>
+            <a
+              href="https://www.prvabankacg.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <img src={PrvaBanka} className="sliderimg" alt="x" />
+            </a>
+            <a href="http://rdc.co.me/" target="_blank" rel="noreferrer">
+              {" "}
+              <img src={RDC} className="sliderimg" alt="x" />
+            </a>
+            <a
+              href="https://www.gov.me/cyr/uprava-za-izvrsenje-krivicnih-sankcija "
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <img src={UIKS} className="sliderimg" alt="x" />
+            </a>
           </AliceCarousel>
         </Row>
       </Container>

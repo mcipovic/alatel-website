@@ -31,16 +31,78 @@ function Partners({ mne, eng }) {
         {eng && <h2 data-aos="fade-up">Partners</h2>}
         <Row>
           <AliceCarousel autoPlay autoPlayInterval={1500} infinite>
-            <img src={AssaAbloy} className="sliderimg" alt="x" />
-            <img src={Avigilon} className="sliderimg" alt="x" />
-            <img src={Geovision} className="sliderimg" alt="x" />
-            <img src={Honeywell} className="sliderimg" alt="x" />
-            <img src={HP} className="sliderimg" alt="x" />
-            <img src={Jantar} className="sliderimg" alt="x" />
-            <img src={Milestone} className="sliderimg" alt="x" />
-            <img src={Paradox} className="sliderimg" alt="x" />
-            <img src={Phantom} className="sliderimg" alt="x" />
-            <img src={Rapsican} className="sliderimg" alt="x" />
+            <a
+              href="https://www.assaabloy.com/group/en"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <img src={AssaAbloy} className="sliderimg" alt="x" />{" "}
+            </a>
+            <a
+              href="https://www.avigilon.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <img src={Avigilon} className="sliderimg" alt="x" />
+            </a>
+            <a
+              href="https://www.geovision.com.tw/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <img src={Geovision} className="sliderimg" alt="x" />
+            </a>
+            <a
+              href="https://www.honeywell.com/us/en"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <img src={Honeywell} className="sliderimg" alt="x" />
+            </a>
+            <a
+              href="https://www.hp.com/us-en/home.html"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <img src={HP} className="sliderimg" alt="x" />
+            </a>
+            <a href="https://jantar.si/en/" target="_blank" rel="noreferrer">
+              {" "}
+              <img src={Jantar} className="sliderimg" alt="x" />
+            </a>
+            <a
+              href="https://www.milestonesys.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <img src={Milestone} className="sliderimg" alt="x" />
+            </a>
+            <a href="https://www.paradox.com/" target="_blank" rel="noreferrer">
+              {" "}
+              <img src={Paradox} className="sliderimg" alt="x" />
+            </a>
+            <a
+              href="https://phantom-technologies.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <img src={Phantom} className="sliderimg" alt="x" />
+            </a>
+            <a
+              href="https://www.rapiscansystems.com/en/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <img src={Rapsican} className="sliderimg" alt="x" />
+            </a>
           </AliceCarousel>
         </Row>
       </Container>

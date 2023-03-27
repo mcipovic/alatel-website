@@ -29,11 +29,11 @@ const Services = ({ mne, eng }) => {
               {eng && <h3>Video Surveillance systems</h3>}
               {mne && (
                 <p>
-                  Usluge nabavke, instalacije i održavanja video nadzora.
-                  Saradnja sa renomiranim inostranim partnerima poput
-                  Avigilion-a ,Dahue, Geovision-a, Milestone-a i mnogih drugih.
-                  Rješenja prilagođena vašim potrebama i specifičnosti vaše
-                  lokacije.{" "}
+                  Usluge nabavke, instalacije i održavanja sistema video
+                  nadzora. Saradnja sa renomiranim inostranim partnerima:
+                  Milestone, Avigilon, Axis, Geovision, Dahua, Hikvision i mnogi
+                  drugi. Rješenja prilagođena vašim potrebama i specifičnostima
+                  vaše lokacije.
                 </p>
               )}
               {eng && (
@@ -56,15 +56,14 @@ const Services = ({ mne, eng }) => {
                   alt="x"
                 ></img>
               </div>
-              {mne && <h3>Sistemi alarma</h3>}
+              {mne && <h3>Protiv provalni (alarmni) sistemi</h3>}
               {eng && <h3>Alarm systems</h3>}
               {mne && (
                 <p>
-                  Usluge nabavke, instalacije i održavanja video nadzora.
-                  Saradnja sa renomiranim inostranim partnerima poput
-                  Avigilion-a ,Dahue, Geovision-a, Milestone-a i mnogih drugih.
-                  Rješenja prilagođena vašim potrebama i specifičnosti vaše
-                  lokacije.{" "}
+                  Usluge nabavke, instalacije i održavanja protiv provalnih
+                  sistema. Saradnja sa renomiranim inostranim partnerima:
+                  Paradox, Ajax, Satel i mnogi drugi. Rješenja prilagođena vašim
+                  potrebama i specifičnostima vaše lokacije.
                 </p>
               )}
               {eng && (
@@ -89,9 +88,10 @@ const Services = ({ mne, eng }) => {
               {mne && (
                 <p>
                   Usluge nabavke, instalacije i održavanje sistema za kontrolu
-                  pristupa. Rješenja pravljena na osnovu Vaših potreba. Saradnja
-                  sa partnerima poput Jantar, Assa Abloy, Špica, Geovision i
-                  drugih. Iskustvo u izradi elektronskih ključeva.
+                  pristupa i evidenciju radnog vremena. Rješenja pravljena na
+                  osnovu vaših potreba. Saradnja sa partnerima: Jantar, Assa
+                  Abloy, Špica, Geovision i drugi. Iskustvo u izradi
+                  elektronskih ključeva.
                 </p>
               )}
               {eng && (
@@ -113,13 +113,13 @@ const Services = ({ mne, eng }) => {
                   alt="x"
                 ></img>
               </div>
-              {mne && <h3>Sistemi detekcije i dojave</h3>}
+              {mne && <h3>Sistemi detekcije i dojave požara</h3>}
               {eng && <h3>Fire detection and notification systems</h3>}
               {mne && (
                 <p>
-                  Usluge održavanja sistema za detekciju i dojavu požara.
-                  Saradnja sa partnerima poput Esser by Honeywell, INIM, Satel i
-                  drugih.
+                  Usluge nabavke, instalacije i održavanja sistema za detekciju
+                  i dojavu požara. Saradnja sa partnerima: Esser by Honeywell,
+                  INIM, Satel i drugi.
                 </p>
               )}
               {eng && (
@@ -169,10 +169,13 @@ const Services = ({ mne, eng }) => {
                   alt="x"
                 ></img>
               </div>
-              {mne && <h3>Metal Detektor vrata/rendgen uređaji</h3>}
+              {mne && <h3>Metal detektorska vrata / rendgen uređaji</h3>}
               {eng && <h3>Metal detector doors and X-ray machines</h3>}
               {mne && (
-                <p>Održavanje uređaja. Saradnja sa proizvođačem Rapiscan.</p>
+                <p>
+                  Usluge nabavke, instalacije i održavanja uređaja. Saradnja sa
+                  proizvođačem Rapiscan.
+                </p>
               )}
               {eng && (
                 <p>
@@ -191,12 +194,12 @@ const Services = ({ mne, eng }) => {
                   alt="x"
                 ></img>
               </div>
-              {mne && <h3>Izrada planova za obavezno štićene objekte:</h3>}
+              {mne && <h3>Planovi zaštite za obavezno štićene objekte</h3>}
               {eng && <h3>Plans for mandatory protected objects</h3>}
               {mne && (
                 <p>
-                  Priprema i izrada planova obavezno štićenih objekata u skladu
-                  sa Zakonom o zaštiti imovine i lica.
+                  Priprema i izrada planova zaštite za obavezno štićene objekate
+                  u skladu sa Zakonom o zaštiti lica i imovine.
                 </p>
               )}
               {eng && (

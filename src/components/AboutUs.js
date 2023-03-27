@@ -32,13 +32,14 @@ function AboutUs({ mne, eng }) {
                 Alatel d.o.o. je osnovan 1995. godine. U periodu od preko 25
                 godina konstantno radimo na poboljšanju naših usluga i širenju
                 ponuđenog asortimana proizvoda. Naša prvenstvena djelatnost je
-                pružanje usluga tehničke zaštite, koje uključuju: Sistem video
-                nadzora, alarmne centrale (Alarmni sistemi), Sistemi detekcije i
-                dojave požara, Sistem kontrole pristupa i metal detektor
-                vrata/rendgen uređaji. Pored usluga tehničke zaštite,
-                specijalizovani smo za IT Opremu, struktuiranu mrežnu
-                infrastrukturu, profesionalnu opremu za specijalizovane namjene
-                kao i izradu planova zaštite obavezno štićenih objekata.
+                pružanje usluga tehničke zaštite, koje uključuju: sisteme video
+                nadzora, protiv provalne sisteme (alarmne sisteme), sisteme
+                detekcije i dojave požara, sisteme kontrole pristupa i
+                evidencije radnog vremena, metal detektorska vrata / rendgen
+                uređaje. Pored usluga tehničke zaštite, specijalizovani smo za
+                IT Opremu, struktuiranu mrežnu infrastrukturu, profesionalnu
+                opremu za specijalizovane namjene kao i izradu planova zaštite
+                obavezno štićenih objekata.
                 <br></br>
                 Pored osnovnih procesa nabavke i instalacije naša firma takodje
                 pruža usluge i održavanja opreme. Portfolio zadovoljnih
@@ -48,9 +49,8 @@ function AboutUs({ mne, eng }) {
                 stvorili smo partnerske odnose za mnogim renomiranim
                 proizvođačima iz inostranstva.
                 <br></br>
-                Naš tim koji broji 12 zaposlenih lica, se sastoji od
-                diplomiranih inžinjera slabe struje. Posjedujemo sve potrebne
-                licence iz oblasti u kojima poslujemo. Između ostalih izdvajamo:
+                Posjedujemo sve potrebne licence iz oblasti u kojima poslujemo.
+                Između ostalih izdvajamo:
               </p>
             )}
             {eng && (
@@ -117,7 +117,11 @@ function AboutUs({ mne, eng }) {
               <ul
                 data-aos="fade-up"
                 data-aos-delay="200"
-                style={{ textAlign: "left", fontSize: "large" }}
+                style={{
+                  textAlign: "left",
+                  fontSize: "large",
+                  fontWeight: "550",
+                }}
               >
                 <li>
                   Licence for performing activities related to the creation of
@@ -128,8 +132,9 @@ function AboutUs({ mne, eng }) {
                   complex engineering objects
                 </li>
                 <li>
-                  Licenca za obavljanje djelatnosti revizije tehničke
-                  dokumentacije i stručnog nadzora nad građenjem objekta
+                  License for conducting activities of technical documentation
+                  review and professional supervision over building
+                  construction.
                 </li>
                 <li>Licence for performing technical security services</li>
                 <li>Access to confidential information</li>
