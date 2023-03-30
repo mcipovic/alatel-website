@@ -16,6 +16,10 @@ import Paradox from "../assets/Paradox.png"; // import partner logos
 import Phantom from "../assets/Phantom.png"; // import partner logos
 import Rapsican from "../assets/Rapiscan.png"; // import partner logos
 import Jantar from "../assets/Jantar.png"; // import partner logos
+import axis from "../assets/partneri/axis.png";
+import Dahua from "../assets/partneri/Dahua.png";
+import Dell from "../assets/partneri/Dell.png";
+import Hikvision from "../assets/partneri/Hikvision.png";
 function Partners({ mne, eng }) {
   // initialize AOS library
   AOS.init({
@@ -102,6 +106,34 @@ function Partners({ mne, eng }) {
             >
               {" "}
               <img src={Rapsican} className="sliderimg" alt="x" />
+            </a>
+            <a href="https://www.axis.com/" target="_blank" rel="noreferrer">
+              {" "}
+              <img src={axis} className="sliderimg" alt="x" />
+            </a>
+            <a
+              href="https://www.dahuasecurity.com/?us=en"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <img src={Dahua} className="sliderimg" alt="x" />
+            </a>
+            <a
+              href="https://www1.euro.dell.com/content/default.aspx?c=me&l=en&s=&s=gen&~ck=cr"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <img src={Dell} className="sliderimg" alt="x" />
+            </a>
+            <a
+              href="https://www.hikvision.com/europe/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <img src={Hikvision} className="sliderimg" alt="x" />
             </a>
           </AliceCarousel>
         </Row>

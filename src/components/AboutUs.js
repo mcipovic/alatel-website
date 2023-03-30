@@ -33,20 +33,20 @@ function AboutUs({ mne, eng }) {
                 godina konstantno radimo na poboljšanju naših usluga i širenju
                 ponuđenog asortimana proizvoda. Naša prvenstvena djelatnost je
                 pružanje usluga tehničke zaštite, koje uključuju: sisteme video
-                nadzora, protiv provalne sisteme (alarmne sisteme), sisteme
+                nadzora, protivprovalne sisteme (alarmne sisteme), sisteme
                 detekcije i dojave požara, sisteme kontrole pristupa i
                 evidencije radnog vremena, metal detektorska vrata / rendgen
                 uređaje. Pored usluga tehničke zaštite, specijalizovani smo za
-                IT Opremu, struktuiranu mrežnu infrastrukturu, profesionalnu
+                IT opremu, struktuiranu mrežnu infrastrukturu, profesionalnu
                 opremu za specijalizovane namjene kao i izradu planova zaštite
                 obavezno štićenih objekata.
                 <br></br>
-                Pored osnovnih procesa nabavke i instalacije naša firma takodje
-                pruža usluge i održavanja opreme. Portfolio zadovoljnih
+                Pored osnovnih procesa nabavke i instalacije naša firma,
+                takodje, pruža usluge održavanja opreme. Portfolio zadovoljnih
                 klijenata nam je u konstantnom rastu. Pored lokalnih firmi,
                 sarađujemo i sa državnim agencijama, ministarstvima kao i
-                međunardnim agencijama i ambasadama. Već duži niz godina,
-                stvorili smo partnerske odnose za mnogim renomiranim
+                međunarodnim agencijama i ambasadama. Već duži niz godina,
+                stvorili smo partnerske odnose sa mnogim renomiranim
                 proizvođačima iz inostranstva.
                 <br></br>
                 Posjedujemo sve potrebne licence iz oblasti u kojima poslujemo.
@@ -63,12 +63,13 @@ function AboutUs({ mne, eng }) {
                 over 25 years, we are constantly working on expanding and
                 improving our services as well as the products that we offer.
                 Our primary activities are technical security services, which
-                mainly include: Video surveillance systems, alarm systems,
-                systems for fire detection and notification, access control
-                systems, metal detector and x-ray machines. Additionally, we are
-                specialized for IT equipment, network communication,
-                professional equipment for specialized projects as well as
-                creation of protection plans for mandatory protected objects.
+                mainly include: video surveillance systems, alarm systems,
+                systems for fire detection and notification, access control and
+                time attendance systems, metal detector and x-ray machines.
+                Additionally, we are specialized for IT equipment, network
+                communication, professional equipment for specialized projects
+                as well as creation of protection plans for mandatory protected
+                objects.
                 <br></br>
                 In addition to basic processes of procurement and installation,
                 our company also offers the services of maintenance of
@@ -78,9 +79,8 @@ function AboutUs({ mne, eng }) {
                 strong connections and partnerships with numerous world-renowned
                 manufacturers.
                 <br></br>
-                Our team, which has 12 employees includes also graduate
-                engineers. We have all the necessary licences which cover our
-                sphere of activities. Some of the licences we own include:
+                We have all the necessary licences which cover our sphere of
+                activities. Some of the licences we own include:
               </p>
             )}
             {mne && (
@@ -132,14 +132,13 @@ function AboutUs({ mne, eng }) {
                   complex engineering objects
                 </li>
                 <li>
-                  License for conducting activities of technical documentation
-                  review and professional supervision over building
-                  construction.
+                  Licence for performing activities of technical documentation
+                  audit and professional supervision of the object building
                 </li>
                 <li>Licence for performing technical security services</li>
                 <li>Access to confidential information</li>
                 <li>
-                  References and trainings from world-renowned manufacturers
+                  References and trainings from world-renowned manufacturers{" "}
                 </li>
                 <li> N-Cage & DUNS</li>
               </ul>
@@ -150,7 +149,7 @@ function AboutUs({ mne, eng }) {
                 data-aos-delay="200"
                 style={{ color: "white", fontSize: "large" }}
               >
-                Our work process is based on a constant communication with our
+                Our work process is based on constant communication with our
                 clients. The goal of every project is to find a custom solution
                 which meets the requirements of our clients.
               </p>
